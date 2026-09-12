@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #1464d8;
+  --primary-dark: #0b3d91;
+  --secondary: #0d2747;
+  --text: #12233f;
+  --text-light: #64748b;
+  --background: #ffffff;
+  --light-bg: #f5f9ff;
+  --border: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+  }
+
+  p {
+    @apply text-base md:text-lg;
+  }
+}
+
+@utility section-padding {
+  @apply px-5 md:px-12 lg:px-16;
+}
+
+@utility heading {
+  @apply text-4xl md:text-6xl lg:text-7xl;
+}
+
+@utility subheading {
+  @apply text-3xl md:text-5xl lg:text-6xl;
+}
