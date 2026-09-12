@@ -45,7 +45,7 @@ export default function UserDashboard() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/users",
+        "https://eclat-task.onrender.com/api/users",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -133,11 +133,11 @@ export default function UserDashboard() {
         return;
       }
 
-      let url = "http://localhost:5000/api/users";
+      let url = "https://eclat-task.onrender.com/api/users";
       let method = "POST";
 
       if (editingUser) {
-        url = `http://localhost:5000/api/users/${editingUser._id}`;
+        url = `https://eclat-task.onrender.com/api/users/${editingUser._id}`;
         method = "PUT";
       }
 
@@ -215,7 +215,7 @@ export default function UserDashboard() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/users/${id}`,
+        `https://eclat-task.onrender.com/api/users/${id}`,
         {
           method: "DELETE",
           headers: {
