@@ -113,7 +113,7 @@ export default function AdminLogin() {
               <input
                 type="email"
                 value={email}
-                onChange={(e) =>
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                   setEmail(e.target.value)
                 }
                 placeholder="admin@example.com"
@@ -142,7 +142,7 @@ export default function AdminLogin() {
               <input
                 type="password"
                 value={password}
-                onChange={(e) =>
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                   setPassword(e.target.value)
                 }
                 placeholder="Enter your password"
